@@ -1,8 +1,20 @@
-@media screen and (max-width: 1525px){
+@media screen and (max-width: 1620px){
     .header{
         flex-wrap: wrap;
         justify-content: space-around;
         gap: 30px;
+    }
+    .cat-carusel__next{
+        right: 0;
+        transform: none;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+    }
+    .cat-carusel__prev{
+        left: 0;
+        transform: none;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
     }
     .h-menu{
         order: 1;
@@ -68,10 +80,11 @@
     }
     .h-usermenu{
         position: fixed;
+        left: 0;
         top: 100vh;
         transform: translateY(-100%);
         background: rgba(255, 255, 255, 0.9);
-        padding: 30px 0;
+        padding: 30px 15px;
     }
     .h-usermenu__i-wrap{
         width: 100%;
