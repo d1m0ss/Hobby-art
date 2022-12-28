@@ -1,0 +1,55 @@
+.catalog-carusel{
+    position: relative;
+    margin-bottom: 128px;
+}
+
+.cat-carusel__item{
+    position: relative;
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.cat-carusel__block{
+    display: flex;
+    gap: 30px;
+}
+
+.cat-carusel__prev{
+    transform: translateX(-50%);
+    left: -27px;
+}
+
+.cat-carusel__next{
+    transform: translateX(50%);
+    right: -27px;
+}
+
+.carusel__grad{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(80, 80, 80, 0.08) 50.1%, rgba(46, 46, 46, 0.59) 100%);
+    border-radius: 20px;
+}
+
+.carusel__subtitle{
+    position: absolute;
+    color: #FFFFFF;
+    bottom: 0;
+    margin-bottom: 24px;
+    margin-left: 34px;
+    margin-right: 40%;
+    z-index: 2;
+}
+
+.cat-carusel__picture{
+    object-fit: none;
+    border-radius: 20px;
+}
+
+.cat-carusel__arrow{
+    color: #976464;
+    text-shadow: 0 0 0 1px black;
+}

@@ -1,0 +1,142 @@
+.header, .header__menu, .h-usermenu, .h-usermenu__i-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-section{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.header{
+    background: #FFF;
+    z-index: 5;
+    padding: 10px 0 27px;
+}
+
+.header__menu, .h-usermenu{
+    max-width: 700px;
+    width: 100%;
+}
+
+#header:focus{
+    display: none;
+}
+
+.h-usermenu__i-wrap{
+    padding: 10px;
+    position: relative;
+    padding: 10px 18px;
+    border: 1px solid #BDBDBD;
+    border-radius: 46px;
+    width: 198px;
+}
+
+.h-usermenubu__button{
+    display: flex;
+    align-items: flex-end;
+    gap: 7px;
+    color: #BDBDBD;
+    text-transform: none;
+    padding: 10px 15px 10px 18px;
+    background: none;
+    transition: 0.3s;
+}
+
+.h-slider__hit{
+    position: absolute;
+    transform: translateY(-40%);
+    top: 0;
+    right: 8%;
+}
+
+.h-usermenubu__button:hover{
+    background: transparent;
+    border: 1px solid #976464;
+    color: #976464;
+}
+
+.h-usermenu__icon{
+    color: #A37C7C;
+    cursor: pointer;
+}
+
+.h-usermenu__icon:not(:first-child){
+    padding-right: 7px;
+}
+
+.h-usermenu__input{
+    max-width: 134px;
+    border: none;
+    outline: none;
+}
+
+.h-usermenu__input::-webkit-input-placeholder{
+    color: #BDBDBD;
+}
+
+.h-menu__item, .h-usermenubu__button{
+    cursor: pointer;
+}
+
+.h-logo{
+    padding: 0 30px ;
+}
+
+.h-slider{
+    position: relative;
+    background: url(../../img/main-oweel/camo.png) no-repeat, linear-gradient(101.38deg, #DDDDBF 3.06%, #ECECD5 85.68%);
+    background-size: cover;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    margin-top: 53px;
+}
+
+.h-slider__arrow-wrap{
+    position: absolute;
+    left: 50%;
+    transform: translateX(calc(-100% - 45px));
+    bottom: 112px;
+}
+
+.h-slider__wrapper{
+    position: relative;
+    background: url(../../img/main-oweel/slider-group.png) no-repeat;
+    background-position: 10%;
+    box-sizing: content-box;
+    padding: 100px 0 100px 50%;
+}
+
+.h-slider__title{
+    font-family: var(--font-main);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.h-slider__text {
+    max-width: 444px;
+    padding: 48px 0;
+    color: rgba(94, 92, 90, 0.8);
+}
+
+.h-slider__arrow{
+    color: #976464;
+}
+
+.carousel-inner{
+    overflow: visible;
+}
+
+.h-slider__awrapp{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94px;
+    height: 30px;
+    bottom: 34px;
+    right: 10.8%;
+}

@@ -1,0 +1,38 @@
+.hecall__title {
+    padding-bottom: 56px;
+    text-align: center;
+}
+
+.recall__inputs{
+    display: flex;
+    gap: 32px;
+    max-width: max-content;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+
+.recall__btn-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: max-content;
+}
+
+.recall__confirm{
+    max-width: 241px;
+}
+
+.recall__button{
+    max-width: 195px;
+}
+
+.recall__input{
+    padding: 17px 0 16px 32px;
+    border: 1px solid #BDBDBD;
+    border-radius: 46px;
+    
+}
+
+.recall__input::-webkit-inner-spin-button, .recall__input::-webkit-outer-spin-button{
+    appearance: none;
+}
