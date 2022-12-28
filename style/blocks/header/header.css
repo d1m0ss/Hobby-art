@@ -80,6 +80,10 @@
     padding: 0 30px ;
 }
 
+.h-logo > a{
+    height: 51px;
+}
+
 .h-slider{
     position: relative;
     background: url(../../img/main-oweel/camo.png) no-repeat, linear-gradient(101.38deg, #DDDDBF 3.06%, #ECECD5 85.68%);

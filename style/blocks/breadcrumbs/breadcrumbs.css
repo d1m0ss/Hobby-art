@@ -1,0 +1,16 @@
+.breadcrumbs{
+    margin-top: 54.35px;
+    margin-bottom: 58px;
+}
+
+.bc__text{
+    font-size: 16px;
+    line-height: 20px;
+    color: #424242;
+}
+
+.bc__text:not(:first-child)::before{
+    content: " ";
+    padding-left: 32px;
+    background: url(../../img/bc_arrow.svg) center no-repeat;
+}

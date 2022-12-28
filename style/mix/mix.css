@@ -13,10 +13,14 @@ body{
     --font-second: 'Montserrat', sans-serif;
 }
 
-.containers{
+.containers, .container{
     max-width: 1650px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .burger{
