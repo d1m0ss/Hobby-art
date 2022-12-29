@@ -76,6 +76,10 @@
     cursor: pointer;
 }
 
+.h-menu__i-link{
+    color: #424242;
+}
+
 .h-logo{
     padding: 0 30px ;
 }
