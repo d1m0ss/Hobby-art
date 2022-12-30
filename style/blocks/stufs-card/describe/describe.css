@@ -1,9 +1,6 @@
 .describe{
     display: flex;
-}
-
-.p-describe{
-    max-width: 748.66px;
+    gap: 44px;
 }
 
 .p-describe__colors{
@@ -77,4 +74,111 @@ background: #0C0C0B;
     padding: 7px;
     border-radius: 50%;
     border: 1px solid #BDBDBD;
+}
+
+.s-describe__title{
+    font-weight: 600;
+    display: inline-block;
+    font-size: 28px;
+    line-height: 34px;
+    color: #424242;
+    padding-top: 14px;
+}
+
+.s-describe__text{
+    max-width: 755px;
+    padding-top: 24px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: #424242;
+}
+
+.s-describe__table-w{
+    margin-top: 40px;
+}
+
+.s-desctibe__t-title{
+    text-align: start;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #424242;
+    padding-bottom: 32px;
+    padding-left: 2px;
+}
+
+.s-describe__table{
+    width: 100%;
+    max-width: 430px;
+    border-collapse: collapse;
+}
+
+.s-describe__t-row{
+    border-bottom: 1px solid #BDBDBD;;
+}
+
+.s-describe__t-cell{
+    font-size: 18px;
+    line-height: 22px;
+    color: #424242;
+}
+
+.s-describe__t-row > .s-describe__t-cell:nth-of-type(1){
+    font-weight: 600;
+}
+
+.s-describe__t-row{
+    display: flex;
+    padding-bottom: 22px;
+}
+
+.s-describe__t-row:not(:nth-of-type(1)){
+    padding-top: 22px;
+}
+
+.s-describe__t-row > .s-describe__t-cell:nth-of-type(1){
+    flex-grow: 1;
+    padding-left: 3px;
+}
+
+.s-describe__t-row > .s-describe__t-cell:nth-of-type(2){
+    flex-basis: 153px;
+}
+
+.s-describe__btns{
+    margin-top: 32px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.d-btns__price{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #424244;
+}
+
+.d-btns__count-w{
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    padding: 11px 12px 10px 13px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #bdbdbd;
+    border: 1px solid #BDBDBD;
+    border-radius: 46px;
+}
+
+.d-btns__count-w > i{
+    cursor: pointer;
+}
+
+
+.d-btns__button{
+    font-size: 16px;
+    font-weight: 600;
 }
