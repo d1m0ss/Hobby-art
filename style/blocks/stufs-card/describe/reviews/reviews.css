@@ -46,6 +46,7 @@
 
 .reviews__wrapper{
     min-width: max-content;
+    max-width: 551px;
     display: flex;
     gap: 24px;
     padding: 40px;
@@ -97,10 +98,11 @@
 }
 
 .reviews__coment-w{
+    max-width: 388px;
     font-weight: 400;
 }
 
-.reviews__conet{
+.reviews__coment{
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
