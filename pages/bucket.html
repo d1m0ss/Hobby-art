@@ -6,10 +6,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Spectral+SC:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Spectral+SC:wght@300;600&display=swap" rel="stylesheet">    <title>Карточка товара</title>
-    
+    <link rel="stylesheet" href="../style/blocks/bucket/bucket.css">
     <title>Корзина</title>
 </head>
 <body>
     
+    <header class="bicket__header">
+
+        <section class="hat">
+            <div class="containers hat__container">
+                <aricle class="hat__number n-hat">
+                    <i class="fa-solid fa-phone-volume n-hat__icon hat__value"></i>
+                    <span class="n-hat__value hat__value">+7 (924) 765 28 20</span>
+                </aricle>
+                <aricle class="hat__location l-hat">
+                    <i class="fa-solid fa-location-dot l-hat__icon hat__value"></i>
+                    <span class="l-hat__value hat__value">г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</span>
+                </aricle>
+                <aricle class="hat__time t-hat">
+                    <i class="fa-solid fa-clock t-hat__icon hat__value"></i>
+                    <span class="t-hat__value hat__value">Ежедневно с 10:00 до 19:00</span>
+                </aricle>
+            </div>  
+        </section>
+
+        <div class="container">
+            <section class="header-section">
+
+                <div class="h-menu__burger hm-burger burger">
+                    <a href="#header" class="hm-burger__link"></a>
+                    <div class="hm-burger__item burger__item"></div>
+                    <div class="hm-burger__item burger__item"></div>
+                    <div class="hm-burger__item burger__item"></div>
+                </div>
+                
+                <section id="header" class="header">
+                    <a href="##" class="hm-burger__link-close"></a>
+                    <menu class="header__menu h-menu">
+                        <li class="h-menu__item text-bold-t-16"> Каталог </li>
+                        <li class="h-menu__item text-bold-t-16"> Оплата и доставка </li>
+                        <li class="h-menu__item text-bold-t-16"> Бонусная программа </li>
+                        <li class="h-menu__item text-bold-t-16"> О компании </li>
+                        <li class="h-menu__item text-bold-t-16"> Контакты </li>
+                    </menu>
+                    
+                    <aricle class="header__logo h-logo">
+                        <a href="../main-page.html">
+                            <img src="../style/img/footer_logo.png" alt="logo" class="h-logo__img">
+                        </a>
+                    </aricle>
+                    
+                    <article class="header__usermenu h-usermenu">
+                        <div class="h-usermenu__burger hu-burger burger">
+                            <div class="hu-burger__item burger__item"></div>
+                            <div class="hu-burger__item burger__item"></div>
+                            <div class="hu-burger__item burger__item"></div>
+                        </div>
+                        <label for="" class="h-usermenu__i-wrap">
+                            <input type="text" class="h-usermenu__input text-t-14" placeholder="Поиск товара"> 
+                            <i class="fa-solid fa-magnifying-glass h-usermenu__icon"></i>
+                        </label>
+                        <button class="h-usermenu__user h-usermenubu__button text-t-14"><i class="fa-solid fa-user h-usermenu__icon"></i> Войти</button>
+                        <button class="h-usermenu__favorit h-usermenubu__button text-t-14"><i class="fa-solid fa-heart h-usermenu__icon"></i> Избранное</button>
+                        <button class="h-usermenubu__bucket h-usermenubu__button text-t-14"><i class="fa-solid fa-basket-shopping h-usermenu__icon"></i> Корзина</button>
+                    </article>
+                </section>
+            </section>
+            
+            <section class="breadcrumbs bc">
+                <a href="../main-page.html" class="bc__text"> Главная </a>
+                <a href="#" class="bc__text"> Корзина </a>
+            </section>
+            
+        </div>
+
+    </header>
+
+    <main class="content">
+
+        <section class="container">
+            
+            <sectiom class="forms">
+                <h2 class="forms__title text">Способ получения</h2>
+                <article class="forms__header-w">
+                    <input type="text" name="city" id="" class="forms__place forms__input text" placeholder="Город">
+                    <select name="" id="" class="forms__place forms__input text">
+                        <option value="Почта россии">Почта россии</option>
+                    </select>
+                </article>
+                <article class="forms__body-w">
+                    <article class="forms__adderss-w">
+                        <input type="text" class="fotms__address forms__input text" placeholder="Улица">
+                        <input type="text" class="fotms__address forms__input text" placeholder="Дом">
+                        <input type="text" class="fotms__address forms__input text" placeholder="Квартира">
+                        <input type="text" class="fotms__address forms__input text" placeholder="Индекс">
+                    </article>
+                    <input type="text" class="forms__coment forms__input text" placeholder="Добавить комментарий">
+                </article>
+                <article class="forms__dates">
+                    <h2 class="forms__title text">Данные получателя</h2>
+                    <article class="forms__name-w">
+                        <input type="text" class="forms__name forms__input text" placeholder="Фамилия">
+                        <input type="text" class="forms__name forms__input text" placeholder="Имя">
+                        <input type="text" class="forms__name forms__input text" placeholder="Отчество">
+                        <input type="text" class="forms__name forms__input text" placeholder="Номер телефона">
+                    </article>
+                    <p class="forms__text">
+                        По этому номеру телефона мы с вяжемся с вами для подтверждения заказа
+                    </p>
+                    <input type="email" class="forms__email forms__input text" placeholder="E-mail">
+                    <p class="forms__text">
+                        На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его отслеживания
+                    </p>
+                    <form action="" class="forms__checkpox">
+                        <label for="forms__check" class="forms__checkpox-w">
+                            <input type="checkbox" name="check" id="forms__check">
+                            <div class="forms__k-checkbox"><i class="fa-solid fa-check"></i></div>
+                            <span class="forms__c-text">Подписаться на рассылку новинок и акций</span>
+                        </label>
+                    </form>
+                </article>
+                <article class="forms__way">
+                    <h2 class="forms__title text">Способ оплаты</h2>
+                    <form action="" class="forms__w-check">
+                        <label for="forms__w-check-1" class="forma__w-wrsp">
+                            <input type="radio" name="check" id="forms__w-check-1" class="forms__check">
+                            <div class="forms__w-castom"></div>
+                            <span class="forms__w-text">Оплата при получении наличными или картой</span>
+                        </label>
+                        <label for="forms__w-check-2" class="forma__w-wrsp">
+                            <input type="radio" name="check" id="forms__w-check-2" class="forms__check">
+                            <div class="forms__w-castom"></div>
+                            <span class="forms__w-text">Оплата банковской картой онлайн</span>
+                        </label>
+                    </form>
+                </article>
+            </sectiom>
+
+            <section class="composition">
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/95240505f4.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
