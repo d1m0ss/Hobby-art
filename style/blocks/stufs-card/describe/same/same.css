@@ -77,7 +77,7 @@
     font-size: 14px;
     color: transparent;
     background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
-    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .same__c-name{
@@ -121,7 +121,7 @@
     line-height: 17px;
     color: transparent;
     background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
-    background-clip: text;
+    -webkit-background-clip: text;
     border: 1px solid #BDBDBD;
 }
 

@@ -1,3 +1,8 @@
+.bucket__container{
+    display: flex;
+    justify-content: space-between;
+}
+
 .breadcrumbs{
     margin-bottom: 64px;
 }
@@ -95,7 +100,9 @@
     align-items: center;
     justify-content: center;
     border: 2px solid #CFA5A5;
-    /* border-image: linear-gradient(to right top, blue, skyblue, blue);    */
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     border-radius: 6.64286px;
 }
 
