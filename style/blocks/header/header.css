@@ -142,3 +142,20 @@
     bottom: 34px;
     right: 10.8%;
 }
+
+.carousel-control-prev, .carousel-control-next{
+    background: transparent;
+    border: none;
+}
+
+.carousel-control-prev > span{
+    display: none;
+}
+
+.h-slider__awrapp{
+    justify-content: space-between;
+}
+
+.carousel-control-next > span{
+    display: none;
+}

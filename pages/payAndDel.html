@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Spectral+SC:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Spectral+SC:wght@300;600&display=swap" rel="stylesheet">    <title>Карточка товара</title>
+    <link rel="stylesheet" href="../style/blocks/payAndDel/payAndDel.css">
+    <title>Оплата и доставка</title>
+</head>
+<body>
+    
+    <header class="bicket__header">
+
+        <section class="hat">
+            <div class="containers hat__container">
+                <aricle class="hat__number n-hat">
+                    <i class="fa-solid fa-phone-volume n-hat__icon hat__value"></i>
+                    <span class="n-hat__value hat__value">+7 (924) 765 28 20</span>
+                </aricle>
+                <aricle class="hat__location l-hat">
+                    <i class="fa-solid fa-location-dot l-hat__icon hat__value"></i>
+                    <span class="l-hat__value hat__value">г. Якутск, ул. Петра Алексеева, д. 6, ТЦ “Олонхо”</span>
+                </aricle>
+                <aricle class="hat__time t-hat">
+                    <i class="fa-solid fa-clock t-hat__icon hat__value"></i>
+                    <span class="t-hat__value hat__value">Ежедневно с 10:00 до 19:00</span>
+                </aricle>
+            </div>  
+        </section>
+
+        <div class="container">
+            <section class="header-section">
+
+                <div class="h-menu__burger hm-burger burger">
+                    <a href="#header" class="hm-burger__link"></a>
+                    <div class="hm-burger__item burger__item"></div>
+                    <div class="hm-burger__item burger__item"></div>
+                    <div class="hm-burger__item burger__item"></div>
+                </div>
+                
+                <section id="header" class="header">
+                    <a href="##" class="hm-burger__link-close"></a>
+                    <menu class="header__menu h-menu">
+                        <li class="h-menu__item text-bold-t-16"> Каталог </li>
+                        <li class="h-menu__item text-bold-t-16"> Оплата и доставка </li>
+                        <li class="h-menu__item text-bold-t-16"> Бонусная программа </li>
+                        <li class="h-menu__item text-bold-t-16"> О компании </li>
+                        <li class="h-menu__item text-bold-t-16"> Контакты </li>
+                    </menu>
+                    
+                    <aricle class="header__logo h-logo">
+                        <a href="../main-page.html">
+                            <img src="../style/img/footer_logo.png" alt="logo" class="h-logo__img">
+                        </a>
+                    </aricle>
+                    
+                    <article class="header__usermenu h-usermenu">
+                        <div class="h-usermenu__burger hu-burger burger">
+                            <div class="hu-burger__item burger__item"></div>
+                            <div class="hu-burger__item burger__item"></div>
+                            <div class="hu-burger__item burger__item"></div>
+                        </div>
+                        <label for="" class="h-usermenu__i-wrap">
+                            <input type="text" class="h-usermenu__input text-t-14" placeholder="Поиск товара"> 
+                            <i class="fa-solid fa-magnifying-glass h-usermenu__icon"></i>
+                        </label>
+                        <button class="h-usermenu__user h-usermenubu__button text-t-14"><i class="fa-solid fa-user h-usermenu__icon"></i> Войти</button>
+                        <button class="h-usermenu__favorit h-usermenubu__button text-t-14"><i class="fa-solid fa-heart h-usermenu__icon"></i> Избранное</button>
+                        <button class="h-usermenubu__bucket h-usermenubu__button text-t-14"><i class="fa-solid fa-basket-shopping h-usermenu__icon"></i> Корзина</button>
+                    </article>
+                </section>
+            </section>
+            
+            <section class="header__slider h-slider">
+                <article class="h-slider__wrapper">
+                    <h2 class="h-slider__title t-28">Пряжа Macrametr</h2>
+                    <p class="h-slider__text t-18">Повседневная практика показывает, что укрепление и развитие внутренней структуры обеспечивает широкому кругу (специалистов) участие в формировании форм воздействия.</p>
+                    <button class="h-slider__button">В каталог</button>
+                    <article class="h-slider__arrow-wrap"><img src="../style/img/main-oweel/arrow.png" alt="arrow" class="h-slider__picture"></article>
+                    <article class="h-slider__hit"><img src="../style/img/main-oweel/hit.png" alt="hit" class="h-slider__picture"></article>
+                </article>
+                <article class="h-slider__awrapp"> 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <i class="fa-solid fa-chevron-left h-slider__arrow"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <span class="h-slider__text text-bold-t-16">1/5</span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <i class="fa-solid fa-chevron-right h-slider__arrow"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </article>                    
+            </section>
+
+            <section class="breadcrumbs bc">
+                <a href="../main-page.html" class="bc__text"> Главная </a>
+                <a href="#" class="bc__text"> Корзина </a>
+            </section>
+            
+        </div>
+
+    </header>
+
+    <main class="content">
+         
+        <div class="container">
+
+            <section class="pad-wrapper">
+                
+                <section class="catalog">
+                    
+                    <h2 class="catalog__title">Каталог</h2>
+                    
+                    <article class="catalog__text-w">
+                        <span class="catalog__text">Макраме</span>
+                    </article>
+                    <article class="catalog__text-w">
+                        <span class="catalog__text">Вязание</span>
+                    </article>
+                    <article class="catalog__text-w">
+                        <span class="catalog__text">Вышивка</span>
+                    </article>
+                    <article class="catalog__text-w">
+                        <span class="catalog__text">Лепка</span>
+                    </article>
+                    <article class="catalog__text-w">
+                        <span class="catalog__text">Инструменты</span>
+                    </article>
+                    <article class="catalog__text-w">
+                        <span class="catalog__text">Упаковка</span>
+                    </article>
+                    <article class="catalog__text-w">
+                        <span class="catalog__text">Товары <br> для творчества</span>
+                    </article>
+                    <article class="catalog__text-w">
+                        <span class="catalog__text">Книги</span>
+                    </article>
+                    
+                </section>
+
+                <section class="qna">
+                    <article class="pay">
+                        <h2 class="pay__title qna__title">Оплата</h2>
+                        <p class="pay__text qna__text">Оформить заказ в нашем магазине можно и без регистрации, просто заполнив короткую форму для доставки.</p>
+                        <p class="pay__text qna__text">После оформления заказа доступна онлайн оплата банковской картой (оплата производится через защищенный онлайн сервис ПАО «Сбербанк»).</p>
+                        <p class="pay__text qna__text">Срок сбора и обработки заказа осуществляется в течение 1-2 дней после поступления оплаты.</p>
+                    </article>
+                    <article class="deliv">
+                        <h2 class="deliv__title qna__title">Доставка</h2>
+                        <p class="deliv__text qna__text">Доставка заказанных товаров осуществляется в течение 1-2 дней по городу Якутску (в черте города).</p>
+                        <p class="deliv__text qna__text">Стоимость доставки по городу 150-250 рублей в зависимости от адреса доставки.</p>
+                        <p class="deliv__text qna__text">Бесплатная доставка от 2000 рублей в черте города.</p>
+                        <p class="deliv__text qna__text">Отдалённые районы рассчитываются индивидуально.</p>
+                        <p class="deliv__text qna__text">Крупногабаритные товары (как картон) доставка рассчитывается индивидуально.</p>
+                        <p class="deliv__text qna__text">Чтобы отслеживать информацию о заказе, просматривать историю своих заказов и участвовать в бонусной программе авторизируйтесь или пройдите процедуру регистрации. Будьте внимательны при вводе электронной почты, ФИО и адрес доставки.</p>
+                    </article>
+                    <article class="selfdel">
+                        <h2 class="selfdel__title qna__title">Самовывоз</h2>
+                        <p class="selfdel__text qna__text">Вы можете забрать свой заказ самостоятельно по адресу:
+                            г. Якутск, ул. Петра Алексеева, д. 6, ТЦ Олонхо, 2 этаж, «Хобби Арт».</p>
+                    </article>
+                </section>
+
+            </section>
+
+        </div>
+
+    </main>
+    
+    <script src="https://kit.fontawesome.com/95240505f4.js" crossorigin="anonymous"></script>
+
+
+</body>
