@@ -5,12 +5,14 @@
         gap: 30px;
     }
     .cat-carusel__next{
+        width: 5%;
         right: 0;
         transform: none;
         background: rgba(0, 0, 0, 0.5);
         border-radius: 20px;
     }
     .cat-carusel__prev{
+        width: 5%;
         left: 0;
         transform: none;
         background: rgba(0, 0, 0, 0.5);
@@ -31,6 +33,25 @@
     .h-usermenu__input{
         max-width: 100%;
         width: 100%;
+    }
+    .isnta__item-1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .isnta__item-6{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .insta__wrapper{
+        display: grid;
+        gap: 20px;
+        margin-bottom: 64px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 390px);
     }
 }
 
@@ -54,6 +75,7 @@
     }
     .header:target .hm-burger__link-close{
         display: block;
+        left: -15px;
     }
     .header:target .header__menu{
         display: flex;
@@ -93,5 +115,79 @@
         max-width: 100%;
         width: 100%;
         background: transparent;
+    }
+    .h-slider__wrapper{
+        background: none;
+    }
+    .cat-carusel__item:first-child,.cat-carusel__item:last-child{
+        display: none;
+    }
+    .cat-carusel__item:nth-of-type(even){
+        margin: auto;
+    }
+    .footer, .recall__inputs{
+        flex-wrap: wrap;
+    }
+    .recall__inputs{
+        justify-content: center;
+    }
+    .recall__btn-wrap{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .h-slider__wrapper{
+        padding: 15px;
+    }
+    .h-slider__arrow-wrap{
+        display: none;
+    }
+    .cat-carusel__item:nth-of-type(even){
+        display: none;
+    }
+    .cat-carusel__item{
+        margin: auto;
+    }
+    .cat-carusel__prev, .cat-carusel__next{
+        width: none;
+        background: none;
+        opacity: 1;
+    }
+    .history__item{
+        flex-wrap: wrap;
+    }
+    .choise__castom{
+        flex-direction: column;
+    }
+    .c-castom__checkbox{
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (max-width: 520px){
+    .history__item{
+        justify-content: center;
+    }
+    .history__subtitle{
+        text-align: center;
+    }
+    .history__text{
+        text-align: center;
+    }
+    .isnta__item-1{
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+    .isnta__item-6{
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+    .insta__wrapper{
+        display: grid;
+        gap: 20px;
+        margin-bottom: 64px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 390px);
     }
 }

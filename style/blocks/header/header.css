@@ -164,12 +164,19 @@
 .h-slider__awrapp{
     position: absolute;
     display: flex;
+    gap: 28.25px;
     justify-content: center;
     align-items: center;
     width: 94px;
     height: 30px;
     bottom: 34px;
     right: 10.8%;
+}
+
+.h-slider-next,.h-slider-prev{
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .carousel-control-prev, .carousel-control-next{

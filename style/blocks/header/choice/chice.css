@@ -1,5 +1,5 @@
 .choice{
-    width: max-content;
+    max-width: max-content;
     margin: 0 auto;
     padding: 64px 0;
 }
@@ -7,6 +7,7 @@
 .choise__castom{
     cursor: pointer;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 40px;
 }

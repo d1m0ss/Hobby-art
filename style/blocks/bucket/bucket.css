@@ -4,8 +4,4 @@
 @import url(../breadcrumbs/breadcrumbs.css);
 @import url(../bucket/forms/forms.css);
 @import url(../bucket/composition/composition.css);
-@import url();
-@import url();
-@import url();
-@import url();
-@import url();
+@import url(../../adaptive.css);

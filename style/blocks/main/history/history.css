@@ -25,7 +25,7 @@
 }
 
 .history__text {
-    width: 363px;
+    max-width: 363px;
 }
 
 .history__img-wrap{
