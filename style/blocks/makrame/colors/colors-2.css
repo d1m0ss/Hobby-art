@@ -1,0 +1,58 @@
+.same__c-colors-1 > .same__c-color:nth-of-type(1){
+    background: #696837;
+}
+
+.same__c-colors-1 > .same__c-color:nth-of-type(2){
+    background: #81292F;
+}
+
+.same__c-colors-1 > .same__c-color:nth-of-type(3){
+    background: #D8C1AA;
+}
+
+.same__c-colors-1 > .same__c-color:nth-of-type(4){
+    background: #EED53A;
+}
+
+.same__c-colors-2 > .same__c-color:nth-of-type(1){
+    background: #2C66A5;
+}
+
+.same__c-colors-2 > .same__c-color:nth-of-type(2){
+    background: #1FA866;
+}
+
+.same__c-colors-2 > .same__c-color:nth-of-type(3){
+    background: #FFB565;
+}
+
+.same__c-colors-2 > .same__c-color:nth-of-type(4){
+    background: #FF65C1;
+}
+
+.same__c-colors-3 > .same__c-color:nth-of-type(1){
+    background: #FAF9F6;
+}
+
+.same__c-colors-3 > .same__c-color:nth-of-type(2){
+    background: #EBD5BC;
+}
+
+.same__c-colors-3 > .same__c-color:nth-of-type(3){
+    background: #0395AF;
+}
+
+.same__c-colors-3 > .same__c-color:nth-of-type(4){
+    background: #F09482;
+}
+
+
+.sale::after{
+    content: ' 135 ₽ ';
+}
+
+
+
+
+
+

@@ -1,4 +1,6 @@
 .breadcrumbs{
+    display: flex;
+    justify-content: space-between;
     margin-top: 54.35px;
     margin-bottom: 58px;
 }
@@ -14,3 +16,27 @@
     padding-left: 32px;
     background: url(../../img/bc_arrow.svg) center no-repeat;
 }
+
+.bc-soft__price{
+    background: transparent;
+    cursor: pointer;
+    padding: 10px 12px 11px 17px;
+    border: 1px solid #BDBDBD;
+    border-radius: 46px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #bdbdbd;
+}
+
+.bc-soft__price:first-child{
+    margin-right: 15px;
+}
+
+.bc-soft__price > i{
+    padding-left: 8px;
+}
+
+
+
+
