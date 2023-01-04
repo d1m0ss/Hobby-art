@@ -117,6 +117,27 @@
     height: 51px;
 }
 
+.h-usermenu__burger{
+    width: 50px;
+    position: relative;
+    order: 1;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #BDBDBD;
+    text-transform: none;
+    padding: 10px 15px 10px 18px;
+    background: none;
+    transition: 0.3s;
+    border: 1px solid #BDBDBD;
+    border-radius: 46px;
+}
+
+.hu-burger__item{
+    margin: auto;
+}
+
+
 .h-slider{
     position: relative;
     background: url(../../img/main-oweel/camo.png) no-repeat, linear-gradient(101.38deg, #DDDDBF 3.06%, #ECECD5 85.68%);
