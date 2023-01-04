@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Spectral+SC:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Spectral+SC:wght@300;600&display=swap" rel="stylesheet">    <title>Карточка товара</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Spectral+SC:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/blocks/vyazaniye/vyazaniye.css">
     <title>Макраме</title>
 </head>
@@ -57,7 +57,14 @@
                     </aricle>
                     
                     <article class="header__usermenu h-usermenu">
-                        <div class="h-usermenu__burger hu-burger burger">
+                        <div class="h-usermenu__burger hu-burger burger hu-burger_open" id="burger_open">
+                            <a href="#burger_open" class="hu-burger__link"></a>
+                            <div class="hu-burger__item burger__item"></div>
+                            <div class="hu-burger__item burger__item"></div>
+                            <div class="hu-burger__item burger__item"></div>
+                        </div>
+                        <div class="h-usermenu__burger hu-burger burger hu-burger_close" id="burger_close">
+                            <a href="#burger_close" class="hu-burger__link"></a>
                             <div class="hu-burger__item burger__item"></div>
                             <div class="hu-burger__item burger__item"></div>
                             <div class="hu-burger__item burger__item"></div>
@@ -68,7 +75,7 @@
                         </label>
                         <button class="h-usermenu__user h-usermenubu__button text-t-14"><i class="fa-solid fa-user h-usermenu__icon"></i> Войти</button>
                         <button class="h-usermenu__favorit h-usermenubu__button text-t-14"><i class="fa-solid fa-heart h-usermenu__icon"></i> Избранное</button>
-                        <button class="h-usermenubu__bucket h-usermenubu__button text-t-14"><i class="fa-solid fa-basket-shopping h-usermenu__icon"></i> Корзина</button>
+                        <a href="./bucket.html" class="h-usermenubu__bucket h-usermenubu__button text-t-14"><i class="fa-solid fa-basket-shopping h-usermenu__icon"></i> Корзина</a>
                     </article>
                 </section>
             </section>
@@ -113,251 +120,265 @@
     <main class="container-w">
 
         <section class="filter">
-            <article class="filter__item-w">
-                <h4 class="filter__i-subtitle text"> Тип изделий </h4>
-                <label for="filtercb-1" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-1">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+            <div class="filter__chevron filter__chevron_open" id="filter__open">
+                <a href="#filter__open" class="filter_link text">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+            <div class="filter__chevron filter__chevron_close" id="filter__close">
+                <a href="#filter__close" class="filter_link text">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+            </div>
+            <section class="filter__wrapper">
+                <article class="filter__item-w">
+                    <h4 class="filter__i-subtitle text"> Тип изделий </h4>
+                    <label for="filtercb-1" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-1">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Пряжа</span>
-                </label>
-                <label for="filtercb-2" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-2">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Пряжа</span>
+                    </label>
+                    <label for="filtercb-2" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-2">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Инструменты</span>
-                </label>
-                <label for="filtercb-3" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-3">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Инструменты</span>
+                    </label>
+                    <label for="filtercb-3" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-3">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Аксессуары</span>
-                </label>
-            </article>
-            <article class="filter__item-w">
-                <h4 class="filter__i-subtitle text"> Состав </h4>
-                <label for="filtercb-4" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-4">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Аксессуары</span>
+                    </label>
+                </article>
+                <article class="filter__item-w">
+                    <h4 class="filter__i-subtitle text"> Состав </h4>
+                    <label for="filtercb-4" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-4">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Трикотажная</span>
-                </label>
-                <label for="filtercb-5" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-5">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Трикотажная</span>
+                    </label>
+                    <label for="filtercb-5" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-5">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Шерсть</span>
-                </label>
-                <label for="filtercb-6" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-6">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Шерсть</span>
+                    </label>
+                    <label for="filtercb-6" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-6">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Хлопок</span>
-                </label>
-                <label for="filtercb-6" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-6">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Хлопок</span>
+                    </label>
+                    <label for="filtercb-6" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-6">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Меринос</span>
-                </label>
-                <label for="filtercb-6" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-6">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Меринос</span>
+                    </label>
+                    <label for="filtercb-6" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-6">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Альпака</span>
-                </label>
-                <label for="filtercb-6" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-6">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Альпака</span>
+                    </label>
+                    <label for="filtercb-6" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-6">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Мохер</span>
-                </label>
-                <label for="filtercb-6" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-6">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Мохер</span>
+                    </label>
+                    <label for="filtercb-6" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-6">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Вискоза</span>
-                </label>
-                <label for="filtercb-6" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-6">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Вискоза</span>
+                    </label>
+                    <label for="filtercb-6" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-6">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Кашемир</span>
-                </label>
-            </article>
-            <article class="filter__item-w">
-                <h4 class="filter__i-subtitle text"> Производитель </h4>
-                <label for="filtercb-7" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-7">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Кашемир</span>
+                    </label>
+                </article>
+                <article class="filter__item-w">
+                    <h4 class="filter__i-subtitle text"> Производитель </h4>
+                    <label for="filtercb-7" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-7">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Katia</span>
-                </label>
-                <label for="filtercb-8" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-8">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Katia</span>
+                    </label>
+                    <label for="filtercb-8" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-8">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
+                                
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                        <span class="filter__text">Drops</span>
+                    </label>
+                    <label for="filtercb-9" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-9">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Drops</span>
-                </label>
-                <label for="filtercb-9" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-9">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Lana Gatto</span>
+                    </label>
+                    <label for="filtercb-10" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-10">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Lana Gatto</span>
-                </label>
-                <label for="filtercb-10" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-10">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Gazzal</span>
+                    </label>
+                    <label for="filtercb-10" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-10">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Gazzal</span>
-                </label>
-                <label for="filtercb-10" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-10">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Alize</span>
+                    </label>
+                    <label for="filtercb-10" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-10">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
+                                
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                        <span class="filter__text">Yarn Art</span>
+                    </label>
+                    <label for="filtercb-10" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-10">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Alize</span>
-                </label>
-                <label for="filtercb-10" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-10">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Зефирка</span>
+                    </label>
+                </article>
+                <article class="filter__item-w">
+                    <h4 class="filter__i-subtitle text"> Изделие </h4>
+                    <label for="filtercb-11" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-11">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Yarn Art</span>
-                </label>
-                <label for="filtercb-10" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-10">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Шапка</span>
+                    </label>
+                    <label for="filtercb-12" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-12">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Зефирка</span>
-                </label>
-            </article>
-            <article class="filter__item-w">
-                <h4 class="filter__i-subtitle text"> Изделие </h4>
-                <label for="filtercb-11" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-11">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Варежки</span>
+                    </label>
+                    <label for="filtercb-13" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-13">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
+                                
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                        <span class="filter__text">Носки</span>
+                    </label>
+                    <label for="filtercb-14" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-14">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Шапка</span>
-                </label>
-                <label for="filtercb-12" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-12">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
+                        <span class="filter__text">Свитер</span>
+                    </label>
+                    <label for="filtercb-14" class="filter__choice-w">
+                        <input type="checkbox" name="checkbox" id="filtercb-14">
+                        <div class="filter__castom-cb">
+                            <div class="filter__border">
 
-                            <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <span class="filter__text">Варежки</span>
-                </label>
-                <label for="filtercb-13" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-13">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
-
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </div>
-                    <span class="filter__text">Носки</span>
-                </label>
-                <label for="filtercb-14" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-14">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
-
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </div>
-                    <span class="filter__text">Свитер</span>
-                </label>
-                <label for="filtercb-14" class="filter__choice-w">
-                    <input type="checkbox" name="checkbox" id="filtercb-14">
-                    <div class="filter__castom-cb">
-                        <div class="filter__border">
-
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </div>
-                    <span class="filter__text">Детям</span>
-                </label>
-                <button class="filter__button">Показать</button>
-                <button class="filter__button-c">Очистить</button>
-                <spun class="filter__text">Подобрано 3 товаров</spun>
-            </article>
+                        <span class="filter__text">Детям</span>
+                    </label>
+                    <button class="filter__button">Показать</button>
+                    <button class="filter__button-c">Очистить</button>
+                    <spun class="filter__text">Подобрано 3 товаров</spun>
+                </article>
+            </section>
         </section>
 
         <section class="same">

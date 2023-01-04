@@ -26,7 +26,15 @@
     margin-bottom: 24px;
 }
 
-.ct-cell__image-w, .ct-cell__image-w > img{
+.ct-cell__image-w > div{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ct-cell__image-w > img{
     max-width: 175px;
     vertical-align: middle;
 }
