@@ -66,6 +66,40 @@ a{
     border-radius: 2px;
 }
 
+.filter__chevron{
+    display: none;
+    position: fixed;
+    bottom: 25%;
+    left: -15px;
+    width: 60px;
+    height: 50px;
+    border-radius: 0 25% 25% 0;
+    box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.55);
+    background: #fff;
+    z-index: 5;
+}
+
+.filter__chevron_open{
+    z-index: 6;
+}
+
+.filter_link{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter_link > i{
+    color: transparent;
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
 
 
 

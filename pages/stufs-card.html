@@ -57,7 +57,14 @@
                     </aricle>
                     
                     <article class="header__usermenu h-usermenu">
-                        <div class="h-usermenu__burger hu-burger burger">
+                        <div class="h-usermenu__burger hu-burger burger hu-burger_open" id="burger_open">
+                            <a href="#burger_open" class="hu-burger__link"></a>
+                            <div class="hu-burger__item burger__item"></div>
+                            <div class="hu-burger__item burger__item"></div>
+                            <div class="hu-burger__item burger__item"></div>
+                        </div>
+                        <div class="h-usermenu__burger hu-burger burger hu-burger_close" id="burger_close">
+                            <a href="#burger_close" class="hu-burger__link"></a>
                             <div class="hu-burger__item burger__item"></div>
                             <div class="hu-burger__item burger__item"></div>
                             <div class="hu-burger__item burger__item"></div>
@@ -74,10 +81,12 @@
             </header>
 
             <section class="breadcrumbs bc">
-                <a href="../main-page.html" class="bc__text"> Главная </a>
-                <a href="#" class="bc__text"> Каталог </a>
-                <a href="#" class="bc__text"> Макраме </a>
-                <a href="#" class="bc__text"> Шпагат Macrametr </a>
+                <article class="bc__crumbs">
+                    <a href="../main-page.html" class="bc__text"> Главная </a>
+                    <a href="#" class="bc__text"> Каталог </a>
+                    <a href="#" class="bc__text"> Макраме </a>
+                    <a href="#" class="bc__text"> Шпагат Macrametr </a>
+                </article>
             </section>
 
             <section class="describe">

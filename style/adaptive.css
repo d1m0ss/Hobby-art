@@ -53,6 +53,15 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 390px);
     }
+    .reviews__wrapper-w{
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 1525px){
+    .bucket__container{
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 1020px){
@@ -134,6 +143,16 @@
     .recall__btn-wrap{
         align-items: center;
     }
+    .composition__wrapper{
+        max-width: 100%;
+        overflow-y: scroll;
+    }
+    .composition__table {
+        width: 800px;
+    }
+    .pad-wrapper{
+        padding-bottom: 100px;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -199,6 +218,15 @@
     }
     .hu-burger_close{
         display: none;
+    }
+    .hat__container{
+        display: none;
+    }
+    .s-describe__btns{
+        flex-wrap: wrap;
+    }
+    .pad-wrapper{
+        flex-wrap: wrap;
     }
 }
 
@@ -271,5 +299,21 @@
     }
     .filter__chevron_close:target ~ *{
         transform: translateX(-100%);
+    }
+    .c-promo__forma-w, .c-promo__score{
+        flex-wrap: wrap;
+    }
+    .c-promo__price{
+        font-size: 30px;
+    }
+    .p-describe__color, .p-describe__color:hover::before{
+        width: 15px;
+        height: 15px;
+    }
+    .s-describe__btns{
+        justify-content: center;
+    }
+    .s-describe__t-row > .s-describe__t-cell:nth-of-type(2){
+        text-align: end;
     }
 }

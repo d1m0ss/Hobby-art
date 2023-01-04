@@ -1,6 +1,12 @@
 .describe{
     display: flex;
+    flex-wrap: wrap;
     gap: 44px;
+}
+
+.p-describe__image{
+    width: 100%;
+    vertical-align: middle;
 }
 
 .p-describe__colors{

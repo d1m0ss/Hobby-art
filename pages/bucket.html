@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Spectral+SC:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Spectral+SC:wght@300;600&display=swap" rel="stylesheet">    <title>Карточка товара</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Spectral+SC:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/blocks/bucket/bucket.css">
     <title>Корзина</title>
 </head>
@@ -57,7 +57,14 @@
                     </aricle>
                     
                     <article class="header__usermenu h-usermenu">
-                        <div class="h-usermenu__burger hu-burger burger">
+                        <div class="h-usermenu__burger hu-burger burger hu-burger_open" id="burger_open">
+                            <a href="#burger_open" class="hu-burger__link"></a>
+                            <div class="hu-burger__item burger__item"></div>
+                            <div class="hu-burger__item burger__item"></div>
+                            <div class="hu-burger__item burger__item"></div>
+                        </div>
+                        <div class="h-usermenu__burger hu-burger burger hu-burger_close" id="burger_close">
+                            <a href="#burger_close" class="hu-burger__link"></a>
                             <div class="hu-burger__item burger__item"></div>
                             <div class="hu-burger__item burger__item"></div>
                             <div class="hu-burger__item burger__item"></div>
@@ -147,66 +154,67 @@
 
             <section class="composition">   
 
-                
-                <table class="composition__table c-table">
-                    <caption class="c-table__title-wrap">
-                        <h2 class="c-table__title text">Состав заказа</h2>
-                    </caption>
-                    <tbody class="c-table__body">
-                        <tr class="c-table__row">
-                            <td class="c-table__cell ct-cell__image-w">
-                                <div>
-                                    <img src="../style/img/bucket/bucket-1.png" alt="" class="c-table__picture">
-                                </div>
-                            </td>
-                            <td class="c-table__cell ct-cell__title text">Шпагат Macrametr 4 мм, <br> 100 нитей</td>
-                            <td class="c-table__cell ct-cell__count">
-                                <div class="ct-cell__count-w">
-                                    <i class="fa-solid fa-minus"></i>
-                                    <span class="ct-cell__count-v">1</span>
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                            </td>
-                            <td class="c-table__cell ct-cell__price text">332 ₽</td>
-                            <td class="c-table__cell ct-cell__trash"><i class="fa-solid fa-trash-can"></i></td>
-                        </tr>
-                        <tr class="c-table__row">
-                            <td class="c-table__cell ct-cell__image-w">
-                                <div>
-                                    <img src="../style/img/bucket/bucket-2.png" alt="" class="c-table__picture">
-                                </div>
-                            </td>
-                            <td class="c-table__cell ct-cell__title text">Шпагат джутовый <br> Сибшнур 500 м</td>
-                            <td class="c-table__cell ct-cell__count">
-                                <div class="ct-cell__count-w">
-                                    <i class="fa-solid fa-minus"></i>
-                                    <span class="ct-cell__count-v">1</span>
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                            </td>
-                            <td class="c-table__cell ct-cell__price text">385 ₽</td>
-                            <td class="c-table__cell ct-cell__trash"><i class="fa-solid fa-trash-can"></i></td>
-                        </tr>
-                        <tr class="c-table__row">
-                            <td class="c-table__cell ct-cell__image-w">
-                                <div>
-                                    <img src="../style/img/bucket/bucket-3.png" alt="" class="c-table__picture">
-                                </div>
-                            </td>
-                            <td class="c-table__cell ct-cell__title text">Пряжа трикотажная <br> Arachna «Слинг Принт»</td>
-                            <td class="c-table__cell ct-cell__count">
-                                <div class="ct-cell__count-w">
-                                    <i class="fa-solid fa-minus"></i>
-                                    <span class="ct-cell__count-v">1</span>
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                            </td>
-                            <td class="c-table__cell ct-cell__price text">135 ₽</td>
-                            <td class="c-table__cell ct-cell__trash"><i class="fa-solid fa-trash-can"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
 
+                <div class="composition__wrapper">
+                    <table class="composition__table c-table">
+                        <caption class="c-table__title-wrap">
+                            <h2 class="c-table__title text">Состав заказа</h2>
+                        </caption>
+                        <tbody class="c-table__body">
+                            <tr class="c-table__row">
+                                <td class="c-table__cell ct-cell__image-w">
+                                    <div>
+                                        <img src="../style/img/bucket/bucket-1.png" alt="" class="c-table__picture">
+                                    </div>
+                                </td>
+                                <td class="c-table__cell ct-cell__title text">Шпагат Macrametr 4 мм, <br> 100 нитей</td>
+                                <td class="c-table__cell ct-cell__count">
+                                    <div class="ct-cell__count-w">
+                                        <i class="fa-solid fa-minus"></i>
+                                        <span class="ct-cell__count-v">1</span>
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </td>
+                                <td class="c-table__cell ct-cell__price text">332 ₽</td>
+                                <td class="c-table__cell ct-cell__trash"><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                            <tr class="c-table__row">
+                                <td class="c-table__cell ct-cell__image-w">
+                                    <div>
+                                        <img src="../style/img/bucket/bucket-2.png" alt="" class="c-table__picture">
+                                    </div>
+                                </td>
+                                <td class="c-table__cell ct-cell__title text">Шпагат джутовый <br> Сибшнур 500 м</td>
+                                <td class="c-table__cell ct-cell__count">
+                                    <div class="ct-cell__count-w">
+                                        <i class="fa-solid fa-minus"></i>
+                                        <span class="ct-cell__count-v">1</span>
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </td>
+                                <td class="c-table__cell ct-cell__price text">385 ₽</td>
+                                <td class="c-table__cell ct-cell__trash"><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                            <tr class="c-table__row">
+                                <td class="c-table__cell ct-cell__image-w">
+                                    <div>
+                                        <img src="../style/img/bucket/bucket-3.png" alt="" class="c-table__picture">
+                                    </div>
+                                </td>
+                                <td class="c-table__cell ct-cell__title text">Пряжа трикотажная <br> Arachna «Слинг Принт»</td>
+                                <td class="c-table__cell ct-cell__count">
+                                    <div class="ct-cell__count-w">
+                                        <i class="fa-solid fa-minus"></i>
+                                        <span class="ct-cell__count-v">1</span>
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </td>
+                                <td class="c-table__cell ct-cell__price text">135 ₽</td>
+                                <td class="c-table__cell ct-cell__trash"><i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <section class="composition__promo c-promo">
                     <h2 class="c-promo__title text">Промокод</h2>
                     <form action="" class="c-promo__forma-w">
@@ -241,7 +249,7 @@
                         <span class="c-promo__order-text">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</span>
                     </article>
                 </section>
-
+                
             </section>
 
         </section>
